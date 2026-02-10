@@ -1,76 +1,134 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.5">
-  <style type="text/css">
-    span.s1 {font-kerning: none}
+  <meta charset="UTF-8">
+  <title>San Valentín</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.9);
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+      text-align: center;
+      animation: pop 1s ease;
+      z-index: 2;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0); }
+      to { transform: scale(1); }
+    }
+
+    h1 {
+      color: #e63946;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    button {
+      padding: 12px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: 10px;
+      transition: all 0.3s ease;
+    }
+
+    #yes {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    #yes:hover {
+      background: #ff1f4b;
+      transform: scale(1.1);
+    }
+
+    #no {
+      background: #adb5bd;
+      color: white;
+    }
+
+    #no:hover {
+      background: #6c757d;
+      transform: scale(1.1);
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -50px;
+      color: red;
+      font-size: 20px;
+      animation: float 6s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes float {
+      from {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-120vh);
+        opacity: 0;
+      }
+    }
   </style>
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b>&lt;!DOCTYPE html&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b>&lt;html lang="es"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b>&lt;head&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;title&gt;San Valentín&lt;/title&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;style&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>body {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 0;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>font-family: 'Arial', sans-serif;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #ff9a9e, #fad0c4);</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>display: flex;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>justify-content: center;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>align-items: center;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>height: 100vh;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>overflow: hidden;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff; min-height: 28.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>.card {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>background: white;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 40px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 20px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>box-shadow: 0 10px 25px rgba(0,0,0,0.2);</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>text-align: center;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>max-width: 400px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff; min-height: 28.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>h1 {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #e63946;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-bottom: 30px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff; min-height: 28.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>button {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 12px 25px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 18px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>border: none;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 30px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>cursor: pointer;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 10px;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>transition: transform 0.2s;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff; min-height: 28.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>button:hover {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>transform: scale(1.1);</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff; min-height: 28.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>#yes {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>background-color: #ff4d6d;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>color: white;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff; min-height: 28.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>#no {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>background-color: #adb5bd;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">      </span>color: white;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/style&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b>&lt;/head&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b>&lt;body&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff; min-height: 28.0px"><span class="s1"><b></b></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;div class="card"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h1&gt;Paula, ¿Quieres ser mi San Valentín? 💖&lt;/h1&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 24.0px Arial; color: #d2012a; -webkit-text-stroke: #d2012a; background-color: #ffffff"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;button id="ye</b></span></h1>
+
+  <div class="card">
+    <h1>Paula, ¿Quieres ser mi San Valentín? 💖</h1>
+    <button id="yes">Sí 💘</button>
+    <button id="no">No 😈</button>
+  </div>
+
+  <script>
+    const yesBtn = document.getElementById("yes");
+    const noBtn = document.getElementById("no");
+
+    const videoBonito = "https://www.youtube.com/watch?v=2Vv-BfVoq4g"; 
+    const rickroll = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+
+    yesBtn.addEventListener("click", () => {
+      for (let i = 0; i < 40; i++) {
+        createHeart();
+      }
+      setTimeout(() => {
+        window.location.href = videoBonito;
+      }, 1200);
+    });
+
+    noBtn.addEventListener("click", () => {
+      window.location.href = rickroll;
+    });
+
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.innerHTML = "❤️";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = Math.random() * 20 + 15 + "px";
+      heart.style.animationDuration = Math.random() * 3 + 3 + "s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+  </script>
+
 </body>
 </html>
